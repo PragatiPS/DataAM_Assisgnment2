@@ -172,5 +172,5 @@ total_plot <- function(x){
   
 }
 
-Corpus = readLines(choose.files()) #choose corpus
+Corpus = readLines('https://github.com/sudhir-voleti/sample-data-sets/raw/master/text%20analysis%20data/amazon%20nokia%20lumia%20reviews.txt') #choose corpus
 system.time({ Cleanedtext_df <-text_clean(Corpus)%>%dtm_tf()%>%total_plot() })
